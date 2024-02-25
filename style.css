@@ -562,7 +562,7 @@ ul li a:active {
 
 
 
-/*  ABOUT PAGE, COURSE PAGE & CONTACT PAGE  */
+/*  ABOUT PAGE, COURSE PAGE BANNER & CONTACT PAGE BANNER */
 
 #aboutbanner,
 #coursebanner,
@@ -641,6 +641,7 @@ ul li a:active {
     font-size: 17px;
     padding-left: 10px;
     padding-right: 10px;
+    text-align: justify;
 }
 
 #about_img {
@@ -705,6 +706,29 @@ ul li a:active {
 #abt_img4 .abt_overlay:hover {
     background-color: #0000005d;
 }
+
+#about_area2{
+    height: 300px;
+    width: 100%;
+    background-color: #eed97bc2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#about_text2{
+    height: 200px;
+    width: 90%;   
+    padding-top: 20px; 
+}
+#about_text2 h2{
+    color: #04023f;
+}
+
+#about_text2 p{        
+    font-size: 17px;
+    text-align: justify;
+}
+
 
 
 /* COURSE PAGE */
