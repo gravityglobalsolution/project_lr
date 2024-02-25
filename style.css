@@ -567,7 +567,7 @@ ul li a:active {
 #aboutbanner,
 #coursebanner,
 #contactbanner {
-    height: 400px;
+    height: 340px;
     width: 100%;
     background-color: #C6FCFF;
     align-items: center;
@@ -578,28 +578,28 @@ ul li a:active {
 }
 
 #aboutbanner {
-    background-image: url(Contents/Banner/about_us.jpg);
+    background-image: url(Contents/Banner/About.png);
 }
 
 #coursebanner {
-    background-image: url(Contents/Banner/course.jpg);
+    background-image: url(Contents/Banner/Courses.png);
 }
 
 #contactbanner {
-    background-image: url(Contents/Banner/course.jpg);
+    background-image: url(Contents/Banner/Contact.png);
 }
 
 #overlay {
-    height: 400px;
+    height: 340px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.459);
 }
 
 #heading {
     position: absolute;
-    top: 40%;
+    top: 35%;
     left: 50%;
-    font-size: 50px;
+    font-size: 40px;
     color: white;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -675,8 +675,23 @@ ul li a:active {
     background-size: contain;
 }
 
+#abt_img1 #abt_inr_img1,
+#abt_img2 #abt_inr_img2,
+#abt_img3 #abt_inr_img3,
+#abt_img4 #abt_inr_img4 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
 #abt_img3,
 #abt_img4 {
+    position: relative;
     margin-top: 10px;
     margin-left: 5px;
     margin-bottom: 10px;
@@ -686,12 +701,14 @@ ul li a:active {
     background-size: contain;
 }
 
-.abt_overlay {
+/*.abt_overlay {
     height: 180px;
     width: 300px;
 }
 
 #abt_img1 .abt_overlay:hover {
+    position: absolute;
+    margin-top: -155;
     background-color: #0000005d;
 }
 
@@ -705,9 +722,9 @@ ul li a:active {
 
 #abt_img4 .abt_overlay:hover {
     background-color: #0000005d;
-}
+}*/
 
-#about_area2{
+#about_area2 {
     height: 300px;
     width: 100%;
     background-color: #eed97bc2;
@@ -715,20 +732,28 @@ ul li a:active {
     align-items: center;
     justify-content: center;
 }
-#about_text2{
+
+#about_text2 {
     height: 200px;
-    width: 90%;   
-    padding-top: 20px; 
+    width: 90%;
+    padding-top: 20px;
 }
-#about_text2 h2{
+
+#about_text2 h2 {
     color: #04023f;
 }
 
-#about_text2 p{        
+#about_text2 p {
     font-size: 17px;
     text-align: justify;
 }
 
+#abt_img1,
+#abt_img2,
+#abt_img3,
+#abt_img4 h3 {
+    color: white;
+}
 
 
 /* COURSE PAGE */
