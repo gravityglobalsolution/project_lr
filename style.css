@@ -198,64 +198,6 @@ ul li a:active {
     color: rgb(3, 3, 95);
 }
 
-/*#coursearea {
-    
-    width: 90%;
-    display: flex;
-    justify-content: space-evenly; 
-    margin-top: 20px; 
-}
-
-.course1,
-.course2,
-.course3,
-.course4 {
-    margin-top: 20px;
-    height: 250px;
-    width: 20%; 
-    background-color: lightgray; 
-}
-
-.course1 {
-    background-image: url(Contents/Body/BCT.png);
-    border-radius: 10px;
-    border-style: groove;
-    border-width: 2px;
-    border-color: silver;
-    background-size: cover
-    ;
-    background-repeat: no-repeat;
-}
-.course2 {
-    background-image: url(Contents/Body/DMC.png);
-    border-radius: 10px;
-    border-style: groove;
-    border-width: 2px;
-    border-color: silver;
-    background-size: cover
-    ;
-    background-repeat: no-repeat;
-}
-.course3 {
-    background-image: url(Contents/Body/CE.png);
-    border-radius: 10px;
-    border-style: groove;
-    border-width: 2px;
-    border-color: silver;
-    background-size: cover
-    ;
-    background-repeat: no-repeat;
-}
-.course4 {
-    background-image: url(Contents/Body/WRIS.png);
-    border-radius: 10px;
-    border-style: groove;
-    border-width: 2px;
-    border-color: silver;
-    background-size: cover;
-    background-repeat: no-repeat;
-}*/
-
 /* COURSE SLIDER  */
 
 
@@ -318,15 +260,14 @@ ul li a:active {
 }
 
 .slider-wrapper .image-list {
-    display: grid;
-    /* Change from grid to flex */
+    display: grid;    
     grid-template-columns: repeat(10, 1fr);
     gap: 18px;
     font-size: 0;
     list-style: none;
     overflow-x: auto;
     scrollbar-width: none;
-    background-color: #EAE9FC;
+    background-color: #C6FCFF;
 }
 
 .slider-wrapper .image-list::-webkit-scrollbar {
@@ -336,9 +277,7 @@ ul li a:active {
 .slider-wrapper .image-list .image-item {
     width: 250px;
     height: 280px;
-    object-fit: cover;
-    /*border-radius: 10px;
-    border-style: groove;*/
+    object-fit: cover;    
     box-shadow: -5px -5px 8px rgba(84, 87, 88, 0.5);
 }
 
@@ -347,7 +286,7 @@ ul li a:active {
     width: 100%;
     display: flex;
     align-items: center;
-    background-color: #EAE9FC;
+    background-color: #C6FCFF;
 }
 
 .slider-scrollbar .scrollbar-track {
@@ -451,15 +390,15 @@ ul li a:active {
 }
 
 #abouttext p {
-    font-size: 17.5px;
+    font-size: 16.8px;
     font-weight: 500;
     font-style: italic;
     text-align: justify;
 }
 
 #learn_more {
-    background-color: #DAB735;
-    /* Green */
+    position: relative;
+    background-color: #DAB735;    
     border: none;
     color: rgb(2, 10, 78);
     padding: 8px 10px;
@@ -485,9 +424,65 @@ ul li a:active {
     color: #04023f;
 }
 
+@media only screen and (max-width: 768px) {
+    #aboutarea {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #abouttext {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    #aboutimg {
+        width: 90%;
+        margin-top: 20px;
+        border-radius: 20px;
+        border-style: groove;
+    }
+
+    #abouttext p {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    #learn_more {
+        margin-top: 10px;
+    }
+
+    #abouttext h3 {
+        font-size: 20px;
+    }
+
+    #testimonials_area {
+        height: auto;
+        padding: 20px;
+    }
+
+    #testimonial_text h4 {
+        font-size: 25px;
+    }
+
+    #testimonial_text p {
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+
+
+/* ****************** TESTIMONIAL AREA ******************* */
+/* ******************************************************* */
 #testimonials_area {
     height: 300px;
     background-color: #EAE9FC;
+    
+    align-items: center;
 }
 
 #testimonial_text {
@@ -509,55 +504,80 @@ ul li a:active {
     font-size: 22px;
     color: #5f1d03;
 }
-
-#testimonial_slider {
-    height: 200px;
+#testcontainer{
+    height: 150px;
     width: 100%;
     display: flex;
     align-items: center;
-    overflow: hidden;
-    justify-items: center;
     justify-content: center;
-    /* background-color: #04023f;*/
+}
+.testimonial_container {
+    width: 95%;
+    max-width: 1200px;
 }
 
-#testimonial_slider {
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-}
-
-.timg {
+.testimonial-slider-wrapper {
     position: relative;
-
-    background-size: cover;
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
+    overflow-x: hidden;
 }
 
-.testimonial-container {
-    width: 50%;
-    height: auto;
+.testimonial-slider-wrapper .slide-button {
+    position: absolute;
+    top: 50%;
+    outline: none;
+    border: none;
+    height: 50px;
+    width: 50px;
+    z-index: 5;
+    color: #fff;
     display: flex;
+    cursor: pointer;
+    font-size: 2.2rem;
+    background: #ace01c;
     align-items: center;
     justify-content: center;
-    justify-items: center;
-    /*background-color: #04a104;*/
-    overflow-x: hidden;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    padding: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
-.testimonial {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 50%;
-    flex: auto;
-    margin-right: 20px;
-    transition: all;
-    /*background-color: #ace01c;*/
-    overflow-x: hidden;
+
+.testimonial-slider-wrapper .slide-button:hover {
+
+    background: #2c76e6;
+}
+
+.testimonial-slider-wrapper .slide-button#prev-slide {
+    left: -25px;
+    display: none;
+}
+
+.testimonial-slider-wrapper.slide-button#next-slide {
+    right: -25px;
+}
+
+.testimonial-slider-wrapper .testimonial-image-list {
+    display: grid;    
+    grid-template-columns: repeat(10, 1fr);
+    gap: 18px;
+    font-size: 0;
+    list-style: none;
+    overflow-x: auto;
+    scrollbar-width: none;
+    background-color: #C6FCFF;
+}
+
+.testimonial-slider-wrapper .testimonial-image-list::-webkit-scrollbar {
+    display: none;
+}
+
+.testimonial-slider-wrapper .testimonial-image-list .image-item {
+    width: 500px;
+    height: 100px;
+    object-fit: cover;    
+    box-shadow: -5px -5px 8px rgba(84, 87, 88, 0.5);
 }
 
 
@@ -567,7 +587,7 @@ ul li a:active {
 #aboutbanner,
 #coursebanner,
 #contactbanner {
-    height: 340px;
+    height: 330px;
     width: 100%;
     background-color: #C6FCFF;
     align-items: center;
@@ -590,7 +610,7 @@ ul li a:active {
 }
 
 #overlay {
-    height: 340px;
+    height: 330px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.459);
 }
@@ -620,6 +640,7 @@ ul li a:active {
     padding-left: 50px;
     padding-right: 50px;
     display: flex;
+    flex-wrap: wrap;    
     align-items: center;
 }
 
@@ -645,21 +666,25 @@ ul li a:active {
 }
 
 #about_img {
+    
     height: 800px;
     width: 55%;
-    display: flex;
+    display: flex;    
     align-items: center;
     text-align: center;
 }
 
 #about_image2 {
+    padding-left: 20px;
     height: 400px;
-    width: 50%;
+    width: 52%;
     align-items: center;
     justify-content: center;
 }
 
 #about_imagep2 {
+    
+    padding-right: 10px;
     height: 400px;
     width: 50%;
 }
@@ -670,7 +695,7 @@ ul li a:active {
     margin-left: 40px;
     margin-bottom: 10px;
     height: 180px;
-    width: 300px;
+    width: 280px;
     background-color: #2089df;
     background-size: contain;
 }
@@ -696,7 +721,7 @@ ul li a:active {
     margin-left: 5px;
     margin-bottom: 10px;
     height: 180px;
-    width: 300px;
+    width: 280px;
     background-color: #2089df;
     background-size: contain;
 }
@@ -757,60 +782,6 @@ ul li a:active {
 
 
 /* COURSE PAGE */
-
-#coursebody {
-    height: 800px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    justify-items: center;
-    background-color: #e0dffab0;
-}
-
-#subbody {
-    height: 600px;
-    width: 90%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    justify-items: center;
-}
-
-#course_title {
-    font-size: 30px;
-    height: 30px;
-    width: 100%;
-    text-align: center;
-    text-transform: uppercase;
-    color: #04023f;
-}
-
-.course1,
-.course2,
-.course3 {
-
-    height: 380px;
-    width: 380px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    border-radius: 50px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #0000009d;
-    box-shadow: -10px -10px 15px rgba(84, 87, 88, 0.5);
-    margin-top: -50px;
-}
-
-.course1 {
-    background-image: url(Contents/Courses/bcmp.png);
-}
-
-.course2 {
-    background-image: url(Contents/Courses/hdn.png);
-}
 
 
 
