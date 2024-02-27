@@ -1,16 +1,17 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html, body{
+
+html,
+body {
     height: 100%;
     width: 100%;
 }
 
-
 #coursebody {
-    height: 800px;
+    height: 1400px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -20,12 +21,13 @@ html, body{
     background-color: #e0dffab0;
 }
 
-#subbody {
-    height: 600px;
+#subbody,
+#subbody1,
+#subbody2 {
+    height: 340px;
     width: 90%;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    flex-wrap: wrap align-items: center;
     justify-content: space-evenly;
     justify-items: center;
 }
@@ -37,11 +39,18 @@ html, body{
     text-align: center;
     text-transform: uppercase;
     color: #04023f;
+    margin-bottom: 20px;
 }
 
 .course1,
 .course2,
-.course3 {
+.course3,
+.course4,
+.course5,
+.course6,
+.course7,
+.course8,
+.course9 {
 
     height: 380px;
     width: 380px;
@@ -54,27 +63,60 @@ html, body{
     box-shadow: -10px -10px 15px rgba(84, 87, 88, 0.5);
     margin-top: -50px;
 }
+
 .button {
     height: 340px;
     width: 100%;
-    background-color: #04023f;
+
 }
-.course3  #b1{
+
+.course3 #b1 {
     bottom: 0;
     left: 0;
     right: 0;
 }
 
 .course1 {
-    background-image: url(Contents/Courses/bcmp.png);
+    background-image: url(Contents/Courses/Primary_kidseducation.jpeg);
     text-align: center;
 }
 
 .course2 {
-    background-image: url(Contents/Courses/hdn.png);
+    background-image: url(Contents/Courses/Communication.jpeg);
     text-align: center;
 }
+
 .course3 {
-    
+    background-image: url(Contents/Courses/Digital_Marketing.jpeg);
+    text-align: center;
+}
+
+.course4 {
+    background-image: url(Contents/Courses/Digital_Marketing.jpeg);
+    text-align: center;
+}
+
+.course5 {
+    background-image: url(Contents/Courses/Digital_Marketing.jpeg);
+    text-align: center;
+}
+
+.course6 {
+    background-image: url(Contents/Courses/Digital_Marketing.jpeg);
+    text-align: center;
+}
+
+.course7 {
+    background-image: url(Contents/Courses/Digital_Marketing.jpeg);
+    text-align: center;
+}
+
+.course8 {
+    background-image: url(Contents/Courses/Digital_Marketing.jpeg);
+    text-align: center;
+}
+
+.course9 {
+    background-image: url(Contents/Courses/Digital_Marketing.jpeg);
     text-align: center;
 }
