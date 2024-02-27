@@ -27,19 +27,20 @@ body {
     height: 340px;
     width: 90%;
     display: flex;
-    flex-wrap: wrap align-items: center;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: space-evenly;
     justify-items: center;
 }
 
 #course_title {
-    font-size: 30px;
+    font-size: 2.8vw;
     height: 30px;
     width: 100%;
     text-align: center;
     text-transform: uppercase;
     color: #04023f;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .course1,
@@ -51,7 +52,6 @@ body {
 .course7,
 .course8,
 .course9 {
-
     height: 380px;
     width: 380px;
     background-size: contain;
@@ -62,61 +62,76 @@ body {
     border-color: #0000009d;
     box-shadow: -10px -10px 15px rgba(84, 87, 88, 0.5);
     margin-top: -50px;
-}
-
-.button {
-    height: 340px;
-    width: 100%;
-
-}
-
-.course3 #b1 {
-    bottom: 0;
-    left: 0;
-    right: 0;
+    text-align: center;
 }
 
 .course1 {
     background-image: url(Contents/Courses/Primary_kidseducation.jpeg);
-    text-align: center;
 }
 
 .course2 {
     background-image: url(Contents/Courses/Communication.jpeg);
-    text-align: center;
 }
 
 .course3 {
-    background-image: url(Contents/Courses/Digital_Marketing.jpeg);
-    text-align: center;
+    background-image: url(Contents/Courses/Workplace_readyness.jpeg);
 }
 
 .course4 {
     background-image: url(Contents/Courses/Digital_Marketing.jpeg);
-    text-align: center;
 }
 
 .course5 {
-    background-image: url(Contents/Courses/Digital_Marketing.jpeg);
-    text-align: center;
+    background-image: url(Contents/Courses/Microsoft_office365.jpeg);
 }
 
 .course6 {
-    background-image: url(Contents/Courses/Digital_Marketing.jpeg);
-    text-align: center;
+    background-image: url(Contents/Courses/Hardware.jpeg);
 }
 
 .course7 {
-    background-image: url(Contents/Courses/Digital_Marketing.jpeg);
-    text-align: center;
+    background-image: url(Contents/Courses/CCNA.jpeg);
 }
 
 .course8 {
-    background-image: url(Contents/Courses/Digital_Marketing.jpeg);
-    text-align: center;
+    background-image: url(Contents/Courses/Web_Development.jpeg);
 }
 
 .course9 {
-    background-image: url(Contents/Courses/Digital_Marketing.jpeg);
-    text-align: center;
+    background-image: url(Contents/Courses/Software_development.jpeg);
+}
+
+/* Remaining courses with their respective images */
+
+.button {
+    height: 330px;
+    width: 100%;
+}
+
+.b1{
+    font-size: 1.2vw;
+    font-weight: 500;
+    padding: .5vw;
+    border-radius: 50px;
+    border-color: silver;
+    background-color: #DAB735;
+    color: rgb(2, 10, 78);
+}
+.b1:hover{
+    background-color: #6864df;
+    color: white;
+}
+.course1 
+.course2 
+.course3 
+.course4 
+.course5 
+.course6 
+.course7 
+.course8 
+.course9 .b1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;        
 }

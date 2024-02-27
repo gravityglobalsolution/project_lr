@@ -193,7 +193,7 @@ ul li a:active {
 
 #text p {
     margin-top: 20px;
-    font-size: 52px;
+    font-size: 4vw;
     font-weight: 700;
     color: rgb(3, 3, 95);
 }
@@ -260,7 +260,7 @@ ul li a:active {
 }
 
 .slider-wrapper .image-list {
-    display: grid;    
+    display: grid;
     grid-template-columns: repeat(10, 1fr);
     gap: 18px;
     font-size: 0;
@@ -277,7 +277,7 @@ ul li a:active {
 .slider-wrapper .image-list .image-item {
     width: 250px;
     height: 280px;
-    object-fit: cover;    
+    object-fit: cover;
     box-shadow: -5px -5px 8px rgba(84, 87, 88, 0.5);
 }
 
@@ -359,6 +359,7 @@ ul li a:active {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items: center;
     /* To evenly distribute the courses */
     /*background-color: rgba(233, 194, 174, 0.726);    */
     background-color: #eed97bc2;
@@ -368,7 +369,7 @@ ul li a:active {
     margin-top: 20px;
     flex-wrap: wrap;
     padding: 20px;
-    height: 400px;
+    height: 380px;
     width: 40%;
     background-image: linear-gradient(to top, #50c9d6ce, white);
     border-radius: 0 50px 0 50px;
@@ -390,7 +391,7 @@ ul li a:active {
 }
 
 #abouttext p {
-    font-size: 16.8px;
+    font-size: 1.23vw;
     font-weight: 500;
     font-style: italic;
     text-align: justify;
@@ -398,14 +399,14 @@ ul li a:active {
 
 #learn_more {
     position: relative;
-    background-color: #DAB735;    
+    background-color: #DAB735;
     border: none;
     color: rgb(2, 10, 78);
     padding: 8px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 1vw;
     justify-items: center;
     border-radius: 50px;
     border-style: groove;
@@ -419,7 +420,7 @@ ul li a:active {
 }
 
 #abouttext h3 {
-    font-size: 25px;
+    font-size: 2vw;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #04023f;
 }
@@ -444,7 +445,7 @@ ul li a:active {
     }
 
     #abouttext p {
-        font-size: 14px;
+        font-size: 1vw;
         padding: 10px;
     }
 
@@ -453,7 +454,7 @@ ul li a:active {
     }
 
     #abouttext h3 {
-        font-size: 20px;
+        font-size: 2vw;
     }
 
     #testimonials_area {
@@ -462,11 +463,11 @@ ul li a:active {
     }
 
     #testimonial_text h4 {
-        font-size: 25px;
+        font-size: 2.5vw;
     }
 
     #testimonial_text p {
-        font-size: 18px;
+        font-size: 1.8vw;
     }
 }
 
@@ -481,7 +482,6 @@ ul li a:active {
 #testimonials_area {
     height: 300px;
     background-color: #EAE9FC;
-    
     align-items: center;
 }
 
@@ -493,7 +493,7 @@ ul li a:active {
 }
 
 #testimonial_text h4 {
-    font-size: 30px;
+    font-size: 2.5vw;
     padding-top: 20px;
     color: #04023f;
 }
@@ -501,16 +501,18 @@ ul li a:active {
 #testimonial_text p {
     padding-top: 8px;
     font-weight: 500;
-    font-size: 22px;
+    font-size: 1.6vw;
     color: #5f1d03;
 }
-#testcontainer{
+
+#testcontainer {
     height: 150px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .testimonial_container {
     width: 95%;
     max-width: 1200px;
@@ -559,7 +561,7 @@ ul li a:active {
 }
 
 .testimonial-slider-wrapper .testimonial-image-list {
-    display: grid;    
+    display: grid;
     grid-template-columns: repeat(10, 1fr);
     gap: 18px;
     font-size: 0;
@@ -576,7 +578,7 @@ ul li a:active {
 .testimonial-slider-wrapper .testimonial-image-list .image-item {
     width: 500px;
     height: 100px;
-    object-fit: cover;    
+    object-fit: cover;
     box-shadow: -5px -5px 8px rgba(84, 87, 88, 0.5);
 }
 
@@ -619,7 +621,7 @@ ul li a:active {
     position: absolute;
     top: 35%;
     left: 50%;
-    font-size: 40px;
+    font-size: 3vw;
     color: white;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -640,7 +642,7 @@ ul li a:active {
     padding-left: 50px;
     padding-right: 50px;
     display: flex;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -654,46 +656,46 @@ ul li a:active {
 }
 
 #about_text h2 {
-    font-size: 25px;
+    font-size: 2vw;
     color: #04023f;
 }
 
 #about_text p {
-    font-size: 17px;
+    font-size: 1.22vw;
     padding-left: 10px;
     padding-right: 10px;
     text-align: justify;
 }
 
 #about_img {
-    
+
     height: 800px;
     width: 55%;
-    display: flex;    
+    display: flex;
     align-items: center;
     text-align: center;
 }
 
 #about_image2 {
     padding-left: 20px;
-    height: 400px;
+    height: 52.0833vh;
     width: 52%;
     align-items: center;
     justify-content: center;
 }
 
 #about_imagep2 {
-    
+
     padding-right: 10px;
-    height: 400px;
+    height: 52.0833vh;
     width: 50%;
 }
 
 #abt_img1,
 #abt_img2 {
-    margin-top: 10px;
+    margin-top: 1vw;
     margin-left: 40px;
-    margin-bottom: 10px;
+    margin-bottom: .5vw;
     height: 180px;
     width: 280px;
     background-color: #2089df;
@@ -705,7 +707,7 @@ ul li a:active {
 #abt_img3 #abt_inr_img3,
 #abt_img4 #abt_inr_img4 {
     margin-top: 30px;
-    margin-bottom: 10px;
+    margin-bottom: .5vw;
     height: 100px;
     width: 100px;
     border-radius: 50%;
@@ -717,8 +719,8 @@ ul li a:active {
 #abt_img3,
 #abt_img4 {
     position: relative;
-    margin-top: 10px;
-    margin-left: 5px;
+    margin-top: 1vw;
+    margin-left: .5vw;
     margin-bottom: 10px;
     height: 180px;
     width: 280px;
@@ -759,17 +761,18 @@ ul li a:active {
 }
 
 #about_text2 {
-    height: 200px;
+    height: 180px;
     width: 90%;
     padding-top: 20px;
 }
 
 #about_text2 h2 {
     color: #04023f;
+    font-size: 2vw;
 }
 
 #about_text2 p {
-    font-size: 17px;
+    font-size: 1.22vw;
     text-align: justify;
 }
 
@@ -781,11 +784,7 @@ ul li a:active {
 }
 
 
-/* COURSE PAGE */
-
-
-
-/*  FOOTER AREA  */
+/* ====================== FOOTER AREA ======================= */
 
 
 #footer {
