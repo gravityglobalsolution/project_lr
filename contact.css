@@ -107,8 +107,9 @@ html,body {
     .right {        
         width: 100%;
         height: fit-content;
-        border-radius: 30px; /* Adjust as needed */
+        border-radius: 30px;
         margin-bottom: 20px;
+        margin-top: 20px;
     }
     
     .left {
