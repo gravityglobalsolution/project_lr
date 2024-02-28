@@ -26,8 +26,7 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
-    background-color: #DAB735;
-    /*background-image: linear-gradient(to right, white, rgb(212, 212, 24));*/
+    background-color: #DAB735;    
     position: fixed;
 }
 
@@ -74,7 +73,6 @@ body {
 ul li a:active {
     color: #fff;
 }
-
 
 #nav .menu-icon {
     display: none;
@@ -184,8 +182,7 @@ ul li a:active {
 
 #text {
     height: 100px;
-    width: 90%;
-    /*background-color: aqua;*/
+    width: 90%;    
     text-align: center;
     margin-top: 20px;
 }
@@ -202,8 +199,7 @@ ul li a:active {
 
 #course-slider {
     height: 400px;
-    width: 90%;
-    /*background-color: #04023f;*/
+    width: 90%;    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -359,8 +355,6 @@ ul li a:active {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    /* To evenly distribute the courses */
-    /*background-color: rgba(233, 194, 174, 0.726);    */
     background-color: #eed97bc2;
 }
 
@@ -371,8 +365,7 @@ ul li a:active {
     height: 380px;
     width: 40%;
     background-image: linear-gradient(to top, #50c9d6ce, white);
-    border-radius: 0 50px 0 50px;
-    /*box-shadow: -10px -10px 15px rgba(84, 87, 88, 0.5);*/
+    border-radius: 0 50px 0 50px;    
     border-style: groove;
 }
 
