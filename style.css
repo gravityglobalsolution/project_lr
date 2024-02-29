@@ -7,6 +7,8 @@
 html,
 body {
     height: 100%;
+    width: 100%;
+    max-width: 1920px;
 }
 
 body {
@@ -174,6 +176,7 @@ ul li a:active {
 #bodyarea {
     height: 500px;
     width: 100%;
+    max-width: 1920px;
     display: flex;
     flex-direction: column;
     align-items: center;    
@@ -287,6 +290,7 @@ ul li a:active {
 .slider-scrollbar .scrollbar-track {
     background: #ccc;
     width: 100%;
+    max-width: 1920px;
     height: 2px;
     display: flex;
     align-items: center;
@@ -348,9 +352,55 @@ ul li a:active {
 
 /* END OF SLIDER  */
 
-#aboutarea {
-    height: 450px;
+/* *********** Home Course *********** */
+
+#home-course_area {
+    height: 450px ;
     width: 100%;
+    max-width: 1920px;
+    background-color: #27C6D9;        
+    align-items: center;  
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+}
+#head{
+    color: white;
+    font-size: 2.7dvw;
+}
+.cr-img1, .cr-img2, .cr-img3{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: silver;
+}
+
+#home-course_area button{
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #8cdb31;
+    color: #04023f;
+    border-color: silver;
+}
+#home-course_area button:hover{
+    background: #2c76e6;
+    color: white;
+}
+#inner-area {
+    height: 320px;
+    width: 100%;
+    max-width: 1920px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;    
+}
+
+/* *********** END *********** */
+#aboutarea {
+    height: 500px;
+    width: 100%;
+    max-width: 1920px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -363,7 +413,7 @@ ul li a:active {
     flex-wrap: wrap;
     padding: 20px;
     height: 35.1vhd;
-    width: 40% ;
+    width: 500px ;
     background-image: linear-gradient(to top, #50c9d6ce, white);
     border-radius: 0 50px 0 50px;    
     border-style: groove;
@@ -372,7 +422,7 @@ ul li a:active {
 #aboutimg {
     margin-top: 20px;
     height: 400px;
-    width: 40%;
+    width: 500px;
     background-image: url(Contents/Body/medium-shot-colleagues-learning-work.jpg);
     background-size: cover;
     border-radius: 50px 0 50px 0;
@@ -417,65 +467,12 @@ ul li a:active {
     color: #04023f;
 }
 
-@media only screen and (max-width: 768px) {
-    #aboutarea {
-        height: auto;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #abouttext {
-        width: 90%;
-        margin-top: 20px;
-    }
-
-    #aboutimg {
-        width: 90%;
-        margin-top: 20px;
-        border-radius: 20px;
-        border-style: groove;
-    }
-    #abouttext{
-        height: 68dvh;
-        width: 90%;
-        border-radius: 20px;
-        margin-bottom: 0px;
-    }
-
-    #abouttext p {
-        font-size: 3.8dvw;
-        padding: 5px;
-    }
-
-    #learn_more {
-        margin-top: 0px;
-        padding: 10px;
-        font-size: 12px;
-    }
-
-    #abouttext h3 {
-        font-size: 4.5dvw;
-    }
-
-    #testimonials_area {
-        height: auto;
-        padding: 20px;
-    }
-
-    #testimonial_text h4 {
-        font-size: 20px;
-        color: #000000;
-    }
-
-    #testimonial_text p {
-        font-size: 1.8vw;
-    }
-}
 
 /* ****************** TESTIMONIAL AREA ******************* */
 /* ******************************************************* */
 #testimonials_area {
     height: 300px;
+    max-width: 1920px;
     background-color: #EAE9FC;
     align-items: center;
 }
@@ -510,7 +507,7 @@ ul li a:active {
 
 .testimonial_container {
     width: 95%;
-    max-width: 1200px;
+    max-width: 1920px;
 }
 
 .testimonial-slider-wrapper {
@@ -586,6 +583,7 @@ ul li a:active {
 #contactbanner {
     height: 330px;
     width: 100%;
+    max-width: 1920px;
     background-color: #C6FCFF;
     align-items: center;
     background-size: contain;
@@ -633,6 +631,7 @@ ul li a:active {
 #about_body {
     height: 1000px;
     width: 100%;
+    max-width: 1920px;
     background-color: #e0dffab0;
     padding-left: 50px;
     padding-right: 50px;
@@ -907,8 +906,69 @@ ul li a:active {
         }
 
     }
+/* ************* Foorter Area ************* */
 
     .footer-container{
         flex-direction: column;
+    }
+
+/* ************* Foorter End ************* */    
+
+    #text p{
+        font-size: 18px;
+    }
+    #aboutarea {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #abouttext {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    #aboutimg {
+        width: 90%;
+        margin-top: 20px;
+        border-radius: 20px;
+        border-style: groove;
+    }
+    #abouttext{
+        height: 68dvh;
+        width: 90%;
+        border-radius: 20px;
+        margin-bottom: 0px;
+    }
+
+    #abouttext p {
+        font-size: 3.8dvw;
+        padding: 5px;
+    }
+
+    #learn_more {
+        margin-top: 0px;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    #abouttext h3 {
+        font-size: 4.5dvw;
+    }
+
+    #testimonials_area {
+        height: auto;
+        padding: 20px;
+    }
+
+    #testimonial_text h4 {
+        font-size: 20px;
+        color: #000000;
+    }
+
+    #testimonial_text p {
+        font-size: 18px;
+        margin-bottom: 0;
+        padding-bottom: 0;
     }
 }
