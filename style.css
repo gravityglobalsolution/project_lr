@@ -362,8 +362,8 @@ ul li a:active {
     margin-top: 20px;
     flex-wrap: wrap;
     padding: 20px;
-    height: 380px;
-    width: 40%;
+    height: 35.1vhd;
+    width: 40% ;
     background-image: linear-gradient(to top, #50c9d6ce, white);
     border-radius: 0 50px 0 50px;    
     border-style: groove;
@@ -787,6 +787,27 @@ ul li a:active {
     padding-bottom: 20px;
     text-align: center;
 }
+
+.footer-content #footer-img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    border-style: solid;
+    border-color: white;
+}
+.footer-content .ri-facebook-circle-fill, .ri-instagram-fill, .ri-map-pin-2-fill{
+    font-size: 22px;
+    color: white;
+    border: none;    
+    margin: 10px;
+}
+.ri-facebook-circle-fill:hover,
+.ri-instagram-fill:hover,
+.ri-map-pin-2-fill:hover{
+    color: #DAB735;
+    
+}
+
 
 .footer-container {
     display: flex;
